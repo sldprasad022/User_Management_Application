@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>User Registration Application</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<style>
+#form
+{
+	width:500px;
+	margin:auto;
+	margin-top:100;
+}
+
+</style>
+</head>
+<body>
+	<form action="Insert" method="post" class="form card" id="form">
+        <h2 class="bg-danger  text-center">Registration Form</h2>
+        <table class="table table-hover">
+        <tr>
+         <td>Name</td>
+         <td><input type="text" name="userName" required></td>
+        </tr>
+        <tr>
+         <td>Email</td>
+         <td><input type="email" name="email" required></td>
+        </tr>
+        <tr>
+         <td>Mobile</td>
+         <td><input type="text" name="mobile" required></td>
+        </tr>
+        <tr>
+         <td>DOB</td>
+         <td><input type="date" name="dob" required></td>
+        </tr>
+        <tr>
+         <td>City</td>
+         <td><select name="city">
+         	<option value="--Select City--">--Select City--</option>
+            <option value="Rajahmundry">Rajahmundry</option>
+            <option value="Eluru">Eluru</option>
+            <option value="Kakinada">Kakinada</option>
+            <option value="VijayaWada">Vijayawada</option>
+            <option value="Visakhapatnam">Visakhapatnam</option>
+            <option value="Hyderabad">Hyderabad</option>
+         </select></td>
+        </tr>
+        <tr>
+        <td>Gender</td>
+        <td><input type="radio" name="gender" value="male">Male &nbsp;
+            <input type="radio" name="gender" value="female">Female
+        </td>
+        </tr>
+        <tr>
+        <td><button type="submit" class="btn btn-outline-success">Register</button></td>
+        <td><button type="reset" class="btn btn-outline-danger">cancel</button></td>
+        </tr>
+        </table>
+        <button class="btn btn-outline-success"><a href="ShowUsers">Show Users</a></button>
+    </form>
+</body>
+</html>
